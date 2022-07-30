@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LOGIN.aspx" />
+    <Content Include="RECEPCIONISTA_PRINCIPAL.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +80,13 @@
       <DependentUpon>LOGIN.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RECEPCIONISTA_PRINCIPAL.aspx.cs">
+      <DependentUpon>RECEPCIONISTA_PRINCIPAL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RECEPCIONISTA_PRINCIPAL.aspx.designer.cs">
+      <DependentUpon>RECEPCIONISTA_PRINCIPAL.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
