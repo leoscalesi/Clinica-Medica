@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+//Al crear el proyecto: Proyecto ASP.NET Framework Web Vacio
+
+namespace Clinica_Medica
+{
+    public partial class LOGIN : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            
+        }
+    }
+}
