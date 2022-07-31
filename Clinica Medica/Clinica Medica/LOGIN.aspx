@@ -18,7 +18,14 @@
         <div>
             <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
         </div>
-        
+        <div>
+            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click" />
+        </div>
+        <div>
+            <asp:Label ID="lblUserOPassInvalido" runat="server" Text=""></asp:Label>
+        </div>
+    
+    
     </form>
 </body>
 </html>

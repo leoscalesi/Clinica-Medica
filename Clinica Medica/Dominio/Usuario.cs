@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+//BIBLIOTECA DE CLASES Dominio
 namespace Dominio
 {
     public class Usuario

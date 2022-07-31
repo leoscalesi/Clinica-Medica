@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using Dominio;
 
+
+
+//Biblioteca de Clases AccesoDatos
 namespace AccesoDatos
 {
-    public class AccesoDatos
+    public class AccesoaDatos
     {
         private SqlConnection conexion;
         private SqlCommand comando;
@@ -15,7 +19,7 @@ namespace AccesoDatos
 
         //EN EL CONSTRUCTOR ARMO EL ConnectionString
         //INSTANCIO UN OBJETO DE TIPO SqlCommand
-        public AccesoDatos()        
+        public AccesoaDatos()        
         {
             conexion = new SqlConnection("server=(local)\\SQLEXPRESS ; database=Clinica_Medica; integrated security= true");
             comando = new SqlCommand();
