@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="ERROR.aspx" />
     <Content Include="LOGIN.aspx" />
+    <Content Include="RECEPCIONISTA_LISTADO_PACIENTES.aspx" />
     <Content Include="RECEPCIONISTA_PRINCIPAL.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -88,6 +89,13 @@
       <DependentUpon>LOGIN.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RECEPCIONISTA_LISTADO_PACIENTES.aspx.cs">
+      <DependentUpon>RECEPCIONISTA_LISTADO_PACIENTES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RECEPCIONISTA_LISTADO_PACIENTES.aspx.designer.cs">
+      <DependentUpon>RECEPCIONISTA_LISTADO_PACIENTES.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RECEPCIONISTA_PRINCIPAL.aspx.cs">
       <DependentUpon>RECEPCIONISTA_PRINCIPAL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

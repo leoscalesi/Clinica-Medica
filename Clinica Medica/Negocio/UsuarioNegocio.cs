@@ -44,11 +44,41 @@ namespace Negocio
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
     
-    
+        //SI BIEN EL PACIENTE NO ES UN USUARIO DE ESTA APLICACION
+        //QUEDA ESTE METODO DENTRO DE USUARIO
+        
+        public List<Usuario> listaPacientes()
+        {
+            List<Usuario> usuarios = new List<Usuario>();
+            
+            try
+            {
+                //LOS PACIENTES TENDRAN idRol = 4
+                accesoDatos.setearConsulta("select id,usuario,nombre,apellido from Usuarios where idRol = " + 4);
+                accesoDatos.ejecutarLectura();
+
+                while (accesoDatos.Lector.Read())
+                {
+                    Usuario usuario = new Usuario();
+                    usuario.Id = (int)accesoDatos.Lector["id"];
+                    usuario.User = (string)accesoDatos.Lector["usuario"];
+                    usuario.Nombre = (string)accesoDatos.Lector["nombre"];
+                    usuario.Apellido = (string)accesoDatos.Lector["apellido"];
+                
+                    usuarios.Add(usuario);
+                }
+
+                return usuarios;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

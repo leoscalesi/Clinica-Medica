@@ -19,7 +19,7 @@ namespace Clinica_Medica
 
             if (Session["recepcionista"] == null)
             {
-
+                Response.Redirect("ERROR.aspx",false);
             }
             else
             {
@@ -43,7 +43,7 @@ namespace Clinica_Medica
 
         protected void btnPacientes_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("RECEPCIONISTA_LISTADO_PACIENTES.aspx",false);
         }
 
         protected void btnAltaPacientes_Click(object sender, EventArgs e)
