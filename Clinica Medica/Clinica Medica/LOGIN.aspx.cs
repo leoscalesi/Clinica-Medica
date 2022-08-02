@@ -28,7 +28,23 @@ namespace Clinica_Medica
 
             if (usuario != null)
             {
+                //PREGUNTO QUE Rol TIENE PARA DARLE ACCESO AL FORM QUE
+                //CORRESPONDA.
+                switch (usuario.Rol.Id)
+                {
+                    //RECEPCIONISTA
+                    
+                    case 1:
 
+                        //AGREGO AL USUARIO VALIDO EN Session, PARA NO MOSTRAR
+                        //SU PASSWORD
+                        
+                        Session.Add("recepcionista", usuario);
+                        Response.Redirect("RECEPCIONISTA_PRINCIPAL.aspx",false);
+                        
+                    break;
+
+                }
             }
             else
             {

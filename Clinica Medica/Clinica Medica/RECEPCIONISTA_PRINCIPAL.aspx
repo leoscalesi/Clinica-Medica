@@ -16,25 +16,25 @@
             <asp:Label ID="lblHolaRecepcionista" runat="server" Text="Bienvenido/a "></asp:Label>
         </div>
         <div>
-            <asp:Button ID="btnCargarAgenda" runat="server" Text="Cargar Agenda" />
+            <asp:Button ID="btnCargarAgenda" runat="server" Text="Cargar Agenda" OnClick="btnCargarAgenda_Click" />
         </div>
         <div>
-            <asp:Button ID="btnBrindarTurnos" runat="server" Text="Brindar Turnos" />
+            <asp:Button ID="btnBrindarTurnos" runat="server" Text="Brindar Turnos" OnClick="btnBrindarTurnos_Click" />
         </div>
         <div>
-            <asp:Button ID="btnPacientes" runat="server" Text="Lista de Pacientes" />
+            <asp:Button ID="btnPacientes" runat="server" Text="Lista de Pacientes" OnClick="btnPacientes_Click" />
         </div>
         <div>
-            <asp:Button ID="btnAltaPacientes" runat="server" Text="Alta de Pacientes" />
+            <asp:Button ID="btnAltaPacientes" runat="server" Text="Alta de Pacientes" OnClick="btnAltaPacientes_Click" />
         </div>
         <div>
-            <asp:Button ID="btnMedicos" runat="server" Text="Lista de Médicos" />
+            <asp:Button ID="btnMedicos" runat="server" Text="Lista de Médicos" OnClick="btnMedicos_Click" />
         </div>
         <div>
-            <asp:Button ID="btnAltaMedicos" runat="server" Text="Alta de Médicos" />
+            <asp:Button ID="btnAltaMedicos" runat="server" Text="Alta de Médicos" OnClick="btnAltaMedicos_Click" />
         </div>
         <div>
-            <asp:Button ID="btnSalir" runat="server" Text="Salir" />
+            <asp:Button ID="btnSalir" runat="server" Text="Salir" OnClick="btnSalir_Click" />
         </div>
     </form>
 </body>

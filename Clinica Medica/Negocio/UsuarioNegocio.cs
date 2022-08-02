@@ -20,7 +20,7 @@ namespace Negocio
         {
             try
             {
-                accesoDatos.setearConsulta("select id,usuario,pass,nombre,apellido,idRol from Usuarios where usuario = " + email + " and pass = " + pass);
+                accesoDatos.setearConsulta("select id,usuario,pass,nombre,apellido,idRol from Usuarios where usuario = " + "'" + email + "'" + " and pass = " + "'" + pass + "'");
                 accesoDatos.ejecutarLectura();
 
                 if (accesoDatos.Lector.Read())

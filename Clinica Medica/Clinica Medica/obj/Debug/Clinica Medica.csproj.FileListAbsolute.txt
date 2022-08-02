@@ -57,3 +57,9 @@ C:\Users\user\Desktop\Clinica Medica\Clinica Medica\Clinica Medica\obj\Debug\Cli
 C:\Users\user\Desktop\Clinica Medica\Clinica Medica\Clinica Medica\obj\Debug\Clinica Medica.csproj.CopyComplete
 C:\Users\user\Desktop\Clinica Medica\Clinica Medica\Clinica Medica\obj\Debug\Clinica Medica.dll
 C:\Users\user\Desktop\Clinica Medica\Clinica Medica\Clinica Medica\obj\Debug\Clinica Medica.pdb
+C:\Users\user\Desktop\Clinica Medica\Clinica Medica\Clinica Medica\bin\Dominio.dll
+C:\Users\user\Desktop\Clinica Medica\Clinica Medica\Clinica Medica\bin\Negocio.dll
+C:\Users\user\Desktop\Clinica Medica\Clinica Medica\Clinica Medica\bin\AccesoDatos.dll
+C:\Users\user\Desktop\Clinica Medica\Clinica Medica\Clinica Medica\bin\Dominio.pdb
+C:\Users\user\Desktop\Clinica Medica\Clinica Medica\Clinica Medica\bin\Negocio.pdb
+C:\Users\user\Desktop\Clinica Medica\Clinica Medica\Clinica Medica\bin\AccesoDatos.pdb
