@@ -46,6 +46,10 @@ namespace Negocio
             {
                 throw ex;
             }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
         }
     
         //SI BIEN EL PACIENTE NO ES UN USUARIO DE ESTA APLICACION
@@ -78,6 +82,33 @@ namespace Negocio
             {
 
                 throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+        }
+
+        public bool eliminaPaciente(int id)
+        {
+            try
+            {
+                //LOS PACIENTES TENDRAN idRol = 4
+                //BAJA LOGICA
+                accesoDatos.setearConsulta("update Usuarios set activo = 0 where id = " + id + " and idRol = " + 4);
+                accesoDatos.ejecutarLectura();
+
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
             }
         }
     }

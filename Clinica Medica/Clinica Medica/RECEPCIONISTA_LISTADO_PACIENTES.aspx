@@ -10,10 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="gvListadoPacientes" runat="server" AutoGenerateColumns="False">
+            <asp:GridView ID="gvListadoPacientes" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="gvListadoPacientes_SelectedIndexChanged" OnRowDeleting="gvListadoPacientes_RowDeleting">
                          
                     <columns>
-                        <!--EN DataField VAN LOS NOMBRES DE LAS PROPS -->
+                        
+                        <asp:BoundField HeaderText="ID" DataField="Id"/>
                         <asp:BoundField HeaderText="NOMBRE" DataField="Nombre"/>
                         <asp:BoundField HeaderText="APELLIDO" DataField="Apellido"/>
                         <asp:BoundField HeaderText="USUARIO" DataField="User"/>
@@ -22,10 +23,20 @@
                         <asp:CommandField ShowDeleteButton="true" ButtonType="Button" HeaderText="ELIMINAR" />
                     </columns>
 
-
             </asp:GridView>
         </div>
         
+        <div>
+            <asp:Button ID="btnVolver" runat="server" Text="VOLVER" OnClick="btnVolver_Click" />
+        </div>
+
+        <div>
+            <asp:Panel ID="panelBorrar" runat="server" visible="false">
+               <h5><asp:Label ID="lblPanelBorrar"  runat="server" Text="Desea Eliminar El Registro?"></asp:Label></h5>
+               <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click" />
+               <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" />
+            </asp:Panel>
+        </div>
     </form>
 </body>
 </html>
