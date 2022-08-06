@@ -44,7 +44,6 @@ namespace Clinica_Medica
             panelBorrar.Visible = true;
             var id = gvListadoPacientes.Rows[e.RowIndex].Cells[0].Text;
             
-           
             //AL SER idBorrar static,EL VALOR SEGUIRA VIVO POR FUERA
             //DE LAS LLAVES.
             idBorrar = int.Parse(id);
@@ -57,13 +56,12 @@ namespace Clinica_Medica
 
             if (usuarioNegocio.eliminaPaciente(idBorrar))
             {
-                
+                //LLAMO NUEVAMENTE A bd PARA LISTAR
+                //POCO PERFORMANTE
+                gvListadoPacientes.DataSource = usuarioNegocio.listaPacientes();
+                gvListadoPacientes.DataBind();
                 panelBorrar.Visible = false;
             }
-            else
-            {
-                Response.Redirect("Error.aspx",false);
-            }
-        }
+        }   
     }
 }

@@ -20,7 +20,7 @@ namespace Negocio
         {
             try
             {
-                accesoDatos.setearConsulta("select id,usuario,pass,nombre,apellido,idRol from Usuarios where usuario = " + "'" + email + "'" + " and pass = " + "'" + pass + "'");
+                accesoDatos.setearConsulta("select id,usuario,pass,nombre,apellido,idRol from Usuarios where usuario = " + "'" + email + "'" + " and pass = " + "'" + pass + "'" + "and activo = 1");
                 accesoDatos.ejecutarLectura();
 
                 if (accesoDatos.Lector.Read())
@@ -62,7 +62,7 @@ namespace Negocio
             try
             {
                 //LOS PACIENTES TENDRAN idRol = 4
-                accesoDatos.setearConsulta("select id,usuario,nombre,apellido from Usuarios where idRol = " + 4);
+                accesoDatos.setearConsulta("select id,usuario,nombre,apellido from Usuarios where idRol = " + 4 + " and activo = 1");
                 accesoDatos.ejecutarLectura();
 
                 while (accesoDatos.Lector.Read())
@@ -103,8 +103,30 @@ namespace Negocio
             }
             catch (Exception ex)
             {
-
                 throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+        }
+
+        public bool agregarPaciente(Usuario paciente)
+        {
+            //YA QUE EL paciente NO ES USUARIO DEL SISTEMA
+            //LE HARDCODEO User y Pass
+            paciente.User = "paciente";
+            paciente.Pass = "1234";
+            try
+            {
+                accesoDatos.setearConsulta("insert into Usuarios (usuario,pass,nombre,apellido,idRol,activo) values (" + "'" + paciente.User + "'" + "," + "'" + paciente.Pass + "'" + "," + "'" + paciente.Nombre + "'" + "," + "'" + paciente.Apellido + "'" + "," + 4 + "," + 1 + ")");
+                accesoDatos.ejecutarLectura();
+                
+                return true;
+            }
+            catch (Exception ex)
+            {
+                 throw ex;
             }
             finally
             {

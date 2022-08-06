@@ -37,6 +37,7 @@
                <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" />
             </asp:Panel>
         </div>
+
     </form>
 </body>
 </html>
