@@ -21,6 +21,7 @@ namespace Clinica_Medica
             Usuario paciente = new Usuario();
             paciente.Nombre = txtNombre.Text;
             paciente.Apellido = txtApellido.Text;
+            paciente.User = txtUsuario.Text;
             
             UsuarioNegocio usuarioNegocio = new UsuarioNegocio();
             if (usuarioNegocio.agregarPaciente(paciente))

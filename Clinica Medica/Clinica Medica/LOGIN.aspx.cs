@@ -44,6 +44,14 @@ namespace Clinica_Medica
                         
                     break;
 
+                    //NO PUEDE USAR UN PACIENTE LA APLICACION
+                    //
+                    case 4:
+
+                        Response.Redirect("USUARIO_INEXISTENTE.aspx", false);
+                    
+                    break;
+
                 }
             }
             else

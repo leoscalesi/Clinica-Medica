@@ -114,8 +114,7 @@ namespace Negocio
         public bool agregarPaciente(Usuario paciente)
         {
             //YA QUE EL paciente NO ES USUARIO DEL SISTEMA
-            //LE HARDCODEO User y Pass
-            paciente.User = "paciente";
+            //LE HARDCODEO Pass
             paciente.Pass = "1234";
             try
             {

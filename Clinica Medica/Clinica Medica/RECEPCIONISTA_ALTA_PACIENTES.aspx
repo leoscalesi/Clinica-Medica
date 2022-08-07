@@ -21,6 +21,10 @@
             <asp:TextBox ID="txtApellido" runat="server"></asp:TextBox>
         </div>
         <div>
+            <asp:Label ID="lblUsuario" runat="server" Text="Usuario"></asp:Label>
+            <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+        </div>
+        <div>
             <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
         </div>
     </form>
