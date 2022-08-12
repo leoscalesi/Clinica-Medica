@@ -34,11 +34,14 @@ namespace Clinica_Medica
             Response.Redirect("RECEPCIONISTA_PRINCIPAL.aspx",false);
         }
 
+        //EVENTO PARA MODIFICAR UN PACIENTE
         protected void gvListadoPacientes_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            var id = gvListadoPacientes.SelectedRow.Cells[0].Text;
+            Response.Redirect("RECEPCIONISTA_ALTA_PACIENTES.aspx?id=" + id,false );
         }
 
+        //EVENTO PARA BAJA LOGICA DE UN PACIENTE
         protected void gvListadoPacientes_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             panelBorrar.Visible = true;

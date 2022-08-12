@@ -27,6 +27,9 @@
         <div>
             <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
         </div>
+        <div>
+            <asp:Button ID="btnVolver" runat="server" Text="Volver" OnClick="btnVolver_Click"/>
+        </div>
     </form>
 </body>
 </html>

@@ -44,6 +44,15 @@ namespace Clinica_Medica
                         
                     break;
 
+                    //MEDICO
+                    
+                    case 2:
+
+                        Session.Add("medico", usuario);
+                        Response.Redirect("MEDICO_LISTADO_TURNOS.aspx",false);
+                    
+                    break;
+
                     //NO PUEDE USAR UN PACIENTE LA APLICACION
                     //
                     case 4:

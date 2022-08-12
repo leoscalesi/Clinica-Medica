@@ -70,7 +70,9 @@
     <Content Include="ERROR.aspx" />
     <Content Include="GUARDADO_EXITOSO.aspx" />
     <Content Include="LOGIN.aspx" />
+    <Content Include="MEDICO_LISTADO_TURNOS.aspx" />
     <Content Include="RECEPCIONISTA_ALTA_PACIENTES.aspx" />
+    <Content Include="RECEPCIONISTA_LISTADO_MEDICOS.aspx" />
     <Content Include="RECEPCIONISTA_LISTADO_PACIENTES.aspx" />
     <Content Include="RECEPCIONISTA_PRINCIPAL.aspx" />
     <Content Include="USUARIO_INEXISTENTE.aspx" />
@@ -98,6 +100,13 @@
     <Compile Include="LOGIN.aspx.designer.cs">
       <DependentUpon>LOGIN.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MEDICO_LISTADO_TURNOS.aspx.cs">
+      <DependentUpon>MEDICO_LISTADO_TURNOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MEDICO_LISTADO_TURNOS.aspx.designer.cs">
+      <DependentUpon>MEDICO_LISTADO_TURNOS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RECEPCIONISTA_ALTA_PACIENTES.aspx.cs">
       <DependentUpon>RECEPCIONISTA_ALTA_PACIENTES.aspx</DependentUpon>
@@ -105,6 +114,13 @@
     </Compile>
     <Compile Include="RECEPCIONISTA_ALTA_PACIENTES.aspx.designer.cs">
       <DependentUpon>RECEPCIONISTA_ALTA_PACIENTES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RECEPCIONISTA_LISTADO_MEDICOS.aspx.cs">
+      <DependentUpon>RECEPCIONISTA_LISTADO_MEDICOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RECEPCIONISTA_LISTADO_MEDICOS.aspx.designer.cs">
+      <DependentUpon>RECEPCIONISTA_LISTADO_MEDICOS.aspx</DependentUpon>
     </Compile>
     <Compile Include="RECEPCIONISTA_LISTADO_PACIENTES.aspx.cs">
       <DependentUpon>RECEPCIONISTA_LISTADO_PACIENTES.aspx</DependentUpon>

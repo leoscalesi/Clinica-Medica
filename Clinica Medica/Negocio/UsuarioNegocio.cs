@@ -132,5 +132,59 @@ namespace Negocio
                 accesoDatos.cerrarConexion();
             }
         }
+
+        public Usuario buscaUsuarioId (int id)
+        {
+            try
+            {
+                accesoDatos.setearConsulta("select usuario,nombre,apellido from Usuarios where id =" + id + " and activo = 1 ");
+                accesoDatos.ejecutarLectura();
+
+                if (accesoDatos.Lector.Read())
+                {
+                    Usuario usuario = new Usuario();
+                    
+                    usuario.User = (string)accesoDatos.Lector["usuario"];
+                    usuario.Nombre = (string)accesoDatos.Lector["nombre"];
+                    usuario.Apellido = (string)accesoDatos.Lector["apellido"];
+                    
+                    return usuario;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+        }
+
+        
+        public bool modificarPaciente(Usuario paciente)
+        {
+            try
+            {
+                accesoDatos.setearConsulta("update Usuarios set usuario = " + "'" + paciente.User + "'" + "," + "nombre = " + "'" + paciente.Nombre + "'" + "," + "apellido = " + "'" + paciente.Apellido + "'" + "where id = " + paciente.Id);
+                accesoDatos.ejecutarLectura();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+        }
+        
     }
 }
