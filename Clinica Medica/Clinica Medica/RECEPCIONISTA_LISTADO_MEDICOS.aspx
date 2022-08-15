@@ -14,10 +14,10 @@
                          
                     <columns>
                         
-                        <asp:BoundField HeaderText="IDMEDICO" DataField="Usuario.Medico.IdMedico"/>
-                        <asp:BoundField HeaderText="NOMBRE" DataField="Usuario.Nombre"/>
-                        <asp:BoundField HeaderText="APELLIDO" DataField="Usuario.Apellido"/>
-                        <asp:BoundField HeaderText="NRO MATRICULA" DataField="Usuario.Medico.NroMatricula"/>
+                        <asp:BoundField HeaderText="IDMEDICO" DataField="Medico.IdMedico"/>
+                        <asp:BoundField HeaderText="NOMBRE" DataField="Medico.Nombre"/>
+                        <asp:BoundField HeaderText="APELLIDO" DataField="Medico.Apellido"/>
+                        <asp:BoundField HeaderText="NRO MATRICULA" DataField="Medico.NroMatricula"/>
                         
                         <asp:CommandField ShowSelectButton="true" SelectText="Seleccionar" HeaderText="MODIFICAR" />
                         <asp:CommandField ShowDeleteButton="true" ButtonType="Button" HeaderText="ELIMINAR" />

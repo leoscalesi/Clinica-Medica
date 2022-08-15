@@ -11,6 +11,7 @@ namespace Dominio
         public int IdMedico { get; set; }
         public int IdUsuario { get; set; }
         public int NroMatricula { get; set; }
-    
+        public Especialidad Especialidad{ get; set; }
+
     }
 }

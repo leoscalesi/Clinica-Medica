@@ -71,6 +71,7 @@
     <Content Include="GUARDADO_EXITOSO.aspx" />
     <Content Include="LOGIN.aspx" />
     <Content Include="MEDICO_LISTADO_TURNOS.aspx" />
+    <Content Include="RECEPCIONISTA_ALTA_MEDICOS.aspx" />
     <Content Include="RECEPCIONISTA_ALTA_PACIENTES.aspx" />
     <Content Include="RECEPCIONISTA_LISTADO_MEDICOS.aspx" />
     <Content Include="RECEPCIONISTA_LISTADO_PACIENTES.aspx" />
@@ -108,6 +109,13 @@
       <DependentUpon>MEDICO_LISTADO_TURNOS.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RECEPCIONISTA_ALTA_MEDICOS.aspx.cs">
+      <DependentUpon>RECEPCIONISTA_ALTA_MEDICOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RECEPCIONISTA_ALTA_MEDICOS.aspx.designer.cs">
+      <DependentUpon>RECEPCIONISTA_ALTA_MEDICOS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RECEPCIONISTA_ALTA_PACIENTES.aspx.cs">
       <DependentUpon>RECEPCIONISTA_ALTA_PACIENTES.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
