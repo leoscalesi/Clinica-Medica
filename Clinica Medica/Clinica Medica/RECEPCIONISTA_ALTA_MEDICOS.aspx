@@ -29,13 +29,13 @@
             <asp:TextBox ID="txtNroMatricula" runat="server"></asp:TextBox>
         </div>
         <div>
-            <asp:DropDownList ID="ddlEspecialidades" runat="server" AutoPostBack="True"></asp:DropDownList>
+            <asp:DropDownList ID="ddlEspecialidades" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlEspecialidades_SelectedIndexChanged"></asp:DropDownList>
         </div>
         <div>
             <asp:ListBox ID="lbEspecialidades" runat="server"></asp:ListBox>
         </div>
         <div>
-            <asp:Button ID="btnEliminarEspecialidades" runat="server" Text="Limpiar" />
+            <asp:Button ID="btnEliminarEspecialidades" runat="server" Text="Limpiar" OnClick="btnEliminarEspecialidades_Click" />
         </div>
         <div>
             <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />

@@ -58,7 +58,7 @@ namespace Clinica_Medica
 
         protected void btnAltaMedicos_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("RECEPCIONISTA_ALTA_MEDICOS.aspx", false );
         }
 
         protected void btnSalir_Click(object sender, EventArgs e)
